@@ -4,6 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="splash">
+      <img src="image/background.jpg" />
+    </div>
+    <div class="body">
+      <div class="hero-text">
+        This is not a real online service! You know you need something like this
+        in your life to help you realize your deepest dreams.<br />
+        Sign up <em>now</em> to get started.
+        <br />
+        <br />
+        You know you want to.
+      </div>
+      <div class="form-container">
+        <div class="form-hero-text">Let's do This!</div>
+        <form id="sign-up-form" action="" method="post">
+          <div class="form-control">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" id="first-name" />
+          </div>
+
+          <div class="form-control">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" id="last-name" />
+          </div>
+
+          <div class="form-control">
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" />
+          </div>
+
+          <div class="form-control">
+            <label for="phone-number">PHONE NUMBER</label>
+            <input type="tel" id="phone-number" />
+          </div>
+
+          <div class="form-control">
+            <label for="pass">PASSWORD</label>
+            <input type="password" id="pass" />
+          </div>
+
+          <div class="form-control">
+            <label for="pass-confirm">CONFIRM PASSWORD</label>
+            <input type="password" id="pass-confirm" />
+          </div>
+        </form>
+      </div>
+      <div class="footer-content">
+        <button form="sign-up-form">Create Account</button>
+        <p>Already have an account? <span class="login">Log in</span></p>
+      </div>
+    </div>
+  </body>
 </html>
