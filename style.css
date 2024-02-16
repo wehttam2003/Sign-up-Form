@@ -114,7 +114,20 @@ body {
     color: hsl(0, 0%, 30%);
 }
 
-.form-control input {
+.invalid{
+    width: 13rem;
+    height: 1.3rem;
+    border: 2px solid #ff0000;
+    border-radius: 4px;
+}
+.invalid + span::after{
+    display: absolute;
+    content: "* Passwords do not match";
+    color: red;
+    font-size: .8rem;
+}
+
+.form-control input:not(.invalid) {
     width: 13rem;
     height: 1.3rem;
     border: 2px solid #E5E7EB;
@@ -153,8 +166,4 @@ body {
 .footer-content span{
     color: #596D48;
     font-weight: bold;
-}
-
-input:not(:placeholder-shown):invalid{
-    border-color: red;
 }
