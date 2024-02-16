@@ -3,12 +3,21 @@
     src: url(font/Norse-Bold.otf);
 }
 
+@font-face {
+    font-family: Roboto;
+    src: url(font/Roboto-Regular.ttf);
+}
+
+*{
+    font-family: Roboto;
+}
+
 body {
-    background-color: grey;
     margin: 0;
     padding: 0;
     display: flex;
-    flex: auto;
+    flex: 1 1 80px;
+    background-color: hsl(180, 50%, 98%);
 }
 .splash{
     height: 100vh;
@@ -27,7 +36,6 @@ body {
 }
 
 .splash span {
-    font-family: NorseBold;
     font-size: 1vw;
     color: white;
     position: absolute;
@@ -55,4 +63,98 @@ body {
 .splash > img{
     width: 100%;
     height: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+.main > div{
+    padding-left: 3rem;
+}
+
+.hero-text {
+    width: 35vw;
+}
+
+.hero-text, .footer-content {
+    background-color: hsl(180, 50%, 98%);
+}
+
+.hero-text p{
+    font-weight: bold;
+}
+
+.form-container{
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0px 8px 4px hsl(0, 0%, 90%);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.form-hero-text{
+    position: relative;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.form-row{
+    display: flex;
+    gap: 5rem;
+    margin: 1.5rem 0rem;
+}
+
+.form-control label{
+    font-size: .8rem;
+    font-weight: bold;
+    color: hsl(0, 0%, 30%);
+}
+
+.form-control input {
+    width: 13rem;
+    height: 1.3rem;
+    border: 2px solid #E5E7EB;
+    border-radius: 4px;
+
+}
+.form-control input:focus{
+    outline: none;
+    border-color: rgb(150, 150, 255);
+    box-shadow: 0px 2px 4px rgb(202, 202, 202);
+}
+
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content{
+    position: relative;
+    bottom: 2rem;
+}
+
+.footer-content button{
+    background-color: #596D48;
+    border: 0px;
+    width: 11rem;
+    height: 3rem;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px hsl(0, 0%, 75%);
+    font-family: Roboto;
+    font-size: 1.025em;
+    color: white;
+}
+
+.footer-content span{
+    color: #596D48;
+    font-weight: bold;
+}
+
+input[type="password"]:invalid{
+    border-color: red;
 }
