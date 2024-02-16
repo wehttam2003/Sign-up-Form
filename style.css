@@ -155,6 +155,6 @@ body {
     font-weight: bold;
 }
 
-input[type="password"]:invalid{
+input:not(:placeholder-shown):invalid{
     border-color: red;
 }
